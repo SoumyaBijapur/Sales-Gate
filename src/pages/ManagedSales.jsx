@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import manageSalesImage from "../assets/images/manageSalesImage.webp";
+import DemoButton from "../components/DemoButton";
 
 function ManagedSales() {
   return (
@@ -32,13 +33,34 @@ function ManagedSales() {
             </p>
 
             <div className="managed-sales-buttons">
-              <Link
-                to="/about-us"
-                className="managed-sales-primary-btn"
-              >
-                Book a Demo
-                <span>→</span>
-              </Link>
+                <DemoButton
+                  className="
+                    inline-flex
+                    min-h-[52px]
+                    items-center
+                    justify-center
+                    gap-3
+                    rounded-full
+                    bg-[#f5b84b]
+                    px-7
+                    text-[14px]
+                    font-semibold
+                    !text-[#26160b]
+                    shadow-[0_0_25px_rgba(245,184,75,0.18)]
+
+                    max-sm:min-h-[46px]
+                    max-sm:w-full
+                    max-sm:text-[13px]
+                  "
+                >
+                  <span className="!text-[#26160b]">
+                    Book a Demo
+                  </span>
+
+                  <span className="!text-[#26160b]">
+                    →
+                  </span>
+                </DemoButton>
 
               <Link
                 to="/about-us"

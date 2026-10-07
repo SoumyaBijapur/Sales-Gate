@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import SalesGateLogo from "../assets/logo/Sales_gate_mainLogo.png";
+import DemoButton from "./DemoButton";
 
 function Header() {
   const location = useLocation();
@@ -113,25 +114,25 @@ function Header() {
             DESKTOP BOOK A DEMO
         ================================================= */}
         <div className="ml-auto hidden lg:block">
-          <button
-            type="button"
-            className="
-              rounded-full
-              bg-[#ffc15c]
-              px-8
-              py-3
-              text-[15px]
-              font-medium
-              text-[#26160b]
-              shadow-[0_0_25px_rgba(255,193,92,0.20)]
-              transition-all
-              duration-200
-              hover:bg-[#ffd27d]
-              hover:shadow-[0_0_35px_rgba(255,193,92,0.30)]
-            "
-          >
-            Book a Demo
-          </button>
+         <DemoButton
+          className="
+            rounded-full
+            bg-[#ffc15c]
+            px-8
+            py-3
+            text-[15px]
+            font-medium
+            !text-[#26160b]
+            shadow-[0_0_25px_rgba(255,193,92,0.20)]
+            transition-all
+            duration-200
+            hover:bg-[#ffd27d]
+            hover:!text-[#26160b]
+            hover:shadow-[0_0_35px_rgba(255,193,92,0.30)]
+          "
+        >
+          Book a Demo
+        </DemoButton>
         </div>
 
 
@@ -234,8 +235,7 @@ function Header() {
             {/* =================================================
                 MOBILE BOOK A DEMO
             ================================================= */}
-            <button
-              type="button"
+            <DemoButton
               className="
                 mt-5
                 w-full
@@ -245,15 +245,16 @@ function Header() {
                 py-3
                 text-[15px]
                 font-medium
-                text-[#26160b]
+                !text-[#26160b]
                 shadow-[0_0_20px_rgba(255,193,92,0.18)]
                 transition-all
                 duration-200
                 hover:bg-[#ffd27d]
+                hover:!text-[#26160b]
               "
             >
               Book a Demo
-            </button>
+            </DemoButton>
 
           </nav>
         </div>

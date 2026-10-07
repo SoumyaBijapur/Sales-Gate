@@ -9,6 +9,7 @@ import healthcare from "../assets/images/healthcare.webp";
 import realEstate from "../assets/images/realEstate.webp";
 import finance from "../assets/images/finance.webp";
 import AndMore from "../assets/images/AndMore.webp";
+import DemoButton from "../components/DemoButton";
 import NationWideBackgroundImage from "../assets/images/NationWideBackgroundImage.webp";
 
 function AISolutions() {
@@ -1274,13 +1275,12 @@ function AISolutions() {
       </p>
 
       <div className="mt-6 flex items-center gap-3">
-        <Link
-          to="/about-us"
+        <DemoButton
           className="w-full sm:w-auto inline-flex min-h-[42px] items-center justify-center gap-3 rounded-full bg-[#ffc15c] px-6 text-[12px] font-semibold !text-[#26160b] shadow-[0_0_25px_rgba(255,193,92,0.16)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#ffd27d] hover:!text-[#26160b] hover:shadow-[0_0_32px_rgba(255,193,92,0.28)]"
         >
           Book a Demo
           <span className="text-[16px] !text-[#26160b]">→</span>
-        </Link>
+        </DemoButton>
 
         <Link
           to="/about-us"
@@ -1289,7 +1289,6 @@ function AISolutions() {
           Talk to Our Team
         </Link>
       </div>
-    </div>
 
     <div className="relative flex h-[170px] w-full max-w-[250px] shrink-0 items-center justify-center self-center sm:h-[190px] lg:w-[250px] lg:self-auto">
       <div className="absolute h-[185px] w-[185px] rounded-full border border-[#4a3718]" />
@@ -1385,6 +1384,7 @@ function AISolutions() {
         </svg>
       </div>
     </div>
+  </div>
   </div>
 </section>
 

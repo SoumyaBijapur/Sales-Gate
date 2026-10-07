@@ -4,6 +4,7 @@ import AiSalesHeroImage from "../assets/images/AiSalesHeroImage.webp";
 import theChallangeBackground from "../assets/images/theChallangeBackground.webp";
 import peopleAiBackgground from "../assets/images/peopleAiBackgground.webp";
 import sellSmarterBackground from "../assets/images/sellSmarterBackground.webp";
+import DemoButton from "../components/DemoButton";
 
 import Education from "../assets/images/Education.webp";
 import healthcare from "../assets/images/healthcare.webp";
@@ -159,7 +160,7 @@ function AISales() {
             >
               Sales Gate uses AI to help sales teams find the right
               opportunities, understand prospects and take the right
-              actions — so you can grow faster with less guesswork.
+              actions so you can grow faster with less guesswork.
             </p>
 
 
@@ -178,8 +179,7 @@ function AISales() {
               "
             >
 
-              <Link
-                to="/about-us"
+              <DemoButton
                 className="
                   inline-flex
                   min-h-[52px]
@@ -206,7 +206,7 @@ function AISales() {
                 <span className="!text-[#26160b]">
                   →
                 </span>
-              </Link>
+          </DemoButton>
 
 
               <a
@@ -1573,7 +1573,7 @@ function AISales() {
                   max-sm:text-[14px]
                 "
               >
-                AI handles the heavy lifting — analysing data, finding
+                AI handles the heavy lifting analysing data, finding
                 signals, and suggesting next steps. Your team brings the
                 judgement, relationships and expertise that close deals.
               </p>
@@ -2316,37 +2316,34 @@ function AISales() {
                 "
               >
 
-                <Link
-                  to="/about-us"
-                  className="
-                    inline-flex
-                    min-h-[52px]
-                    items-center
-                    justify-center
-                    gap-3
-                    rounded-full
-                    bg-[#f5b84b]
-                    px-7
-                    text-[14px]
-                    font-semibold
-                    !text-[#26160b]
-                    shadow-[0_0_25px_rgba(245,184,75,0.18)]
-                    transition-all
-                    duration-200
-                    hover:-translate-y-0.5
-                    hover:bg-[#ffc65c]
+                <DemoButton
+                className="
+                  inline-flex
+                  min-h-[52px]
+                  items-center
+                  justify-center
+                  gap-3
+                  rounded-full
+                  bg-[#f5b84b]
+                  px-7
+                  text-[14px]
+                  font-semibold
+                  !text-[#26160b]
+                  shadow-[0_0_25px_rgba(245,184,75,0.18)]
 
-                    max-sm:w-full
-                  "
-                >
-                  <span className="!text-[#26160b]">
-                    Book a Demo
-                  </span>
+                  max-sm:min-h-[46px]
+                  max-sm:w-full
+                  max-sm:text-[13px]
+                "
+              >
+                <span className="!text-[#26160b]">
+                  Book a Demo
+                </span>
 
-                  <span className="!text-[#26160b]">
-                    →
-                  </span>
-                </Link>
+                <span className="!text-[#26160b]">
+                  →
+                </span>
+              </DemoButton>
 
 
                 <Link

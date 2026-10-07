@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../app.css";
+import DemoButton from "../components/DemoButton";
 
 import revenueFunnel from "../assets/images/homepageRevenueFunnel.webp";
 
@@ -249,13 +250,10 @@ export default function Home() {
 
           <div className="final-cta-buttons">
 
-            <Link
-              to="/contact"
-              className="primary-button"
-            >
-              Book a Demo
-              <span>→</span>
-            </Link>
+        <DemoButton className="primary-button">
+          Book a Demo
+          <span>→</span>
+        </DemoButton>
 
             <Link
               to="/managed-sales"
